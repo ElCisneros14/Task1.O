@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.padre{
+display: flex;
+flex-flow: column nowrap;
+
+}
+.header{
+    background: url(../assets/Music_Concert.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+a{
+    text-decoration: none;
+}
+  .menu{
+    background: rgba(0, 0, 0, .1 );
+    display: flex;
+    flex-flow: row nowrap;
+    height: 60px;
+    align-items:center;
+    border-bottom: 1px solid rgba(255, 255, 255, .5 );
+  }
+  .logo{
+   display: flex;
+
+  }
+  .logo img{
+    height: 50px;
+  }
+
+  .nav{
+    display: flex;
+    
+  } 
+      .nav a{
+        color: #fff;
+        font-size: 12px;
+        margin: 20px;
+        text-transform: uppercase;
+        padding: 1px 10px;
+        letter-spacing: 2px;
+    
+        
+    
+      }
+      .nav a:hover{
+            color:#343434
+      }
+
+
+.section{
+    background: #000;
+    display: flex;
+}
+.articulos{
+    background: #1c0a6b;
+    flex:2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.article{
+    background: #790006;
+    flex:1 1 40%;
+}
+.navegacion{
+    background: #F58634;
+    flex:1 1 100%;
+}
+.aside{
+    background: #30282a;
+    flex:1 1 auto;
+}
+.publicidad{
+    background: #892CDC;
+}
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+.pie{
+    background: #FFC1F3;
+    width: 300px;
+    
+}
+@media all and (max-width: 800px){
+.section{
+    flex-direction: column;
+
+}
+.menu{
+    flex-direction: column;
+    height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width:600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
